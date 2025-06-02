@@ -1,0 +1,12 @@
+{
+  "name": "vscode-code-playground",
+  "version": "1.0.0",
+  "description": "When you want to code simple, do it in vscode",
+  "author": "eunice.jo",
+  "scripts": {
+    "js": "cd javascript && npm run start:dev",
+    "py": "cd python && python3 main.py",
+    "extensions:backup": "code --list-extensions > .vscode/extensions.txt",
+    "extensions:install": "cat .vscode/extensions.txt | xargs -n 1 code --install-extension"
+  }
+}
